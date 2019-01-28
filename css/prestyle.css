@@ -7,7 +7,7 @@
 }
 .gridContainer {
   display: grid;
-  grid-template: 80px 50px 400px 1fr 1fr 500px repeat(2, 1fr) 200px 90px/100%;
+  grid-template: 80px 50px 400px 340px 340px 400px 370px 370px 250px 50px/100%;
   height: 100%;
   grid-template-areas: "header" "menu" "hero" "hello" "services" "special" "articles" "testimonials" "contactMe" "social";
 }
@@ -45,6 +45,7 @@
 }
 .contactMe {
   grid-area: contactMe;
+  background-color: #f3f3f3;
 }
 .social {
   grid-area: social;
@@ -53,7 +54,7 @@
   width: 80%;
   margin: 0 auto;
 }
-/*Commun Class*/
+/*List Class*/
 .listClass {
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -139,29 +140,36 @@
   color: #fff;
   display: inline-block;
 }
-/*hello*/
-.twoColumn {
-  display: grid;
-  grid-template: 1fr/1fr 1fr;
-  grid-template-areas: "leftC rightC";
-  -ms-flex-align: center;
-      align-items: center;
-  justify-items: center;
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-.leftC {
-  grid-area: leftC;
+/*titles*/
+.titleH2 {
+  color: #a4c348;
+  font-size: 26px;
   text-align: center;
 }
-.rightC {
-  grid-area: rightC;
+/*paraghrap*/
+.simpleP {
+  margin: 12px 0;
+  font-size: 16px;
+  line-height: 24px;
 }
-.idPic img {
-  max-width: 350px;
-  width: auto;
-  height: auto;
-  border: 4px solid #a4c348;
+.white {
+  color: #fff;
+}
+/*hello*/
+.columnContent {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  max-width: 100%;
+}
+.oneH,
+.twoH {
+  width: 45%;
+  margin: 0 auto;
+  text-align: center;
 }
 .button {
   background-color: #a4c348;
@@ -174,108 +182,79 @@
   font-weight: 700;
   cursor: pointer;
 }
-.button:hover {
-  background-color: #63810d;
-}
-/*ContainerServices*/
-.containerServices {
-  margin-top: 25px;
-  margin-bottom: 25px;
-  display: grid;
-  grid-template: 100px 1fr/1fr 1fr 1fr;
-  grid-template-areas: "description description description" "services1 services2 services3";
-}
+/*Services*/
 .description {
-  grid-area: description;
+  margin-top: 35px;
 }
-.services1 {
-  grid-area: services1;
+.containerServices {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  max-width: 100%;
 }
-.services2 {
-  grid-area: services2;
-}
+.services1,
+.services2,
 .services3 {
-  grid-area: services3;
-}
-.iconServices,
-.titleH2 {
-  color: #a4c348;
-  text-align: center;
-  font-size: 24px;
-  margin: 0 0 10px;
-}
-.pServices {
-  max-width: 90%;
-  padding: 5px;
+  width: calc(100% / 3);
+  margin: 5px;
   text-align: center;
 }
-/*special*/
-.imgBackground {
+.iconServices {
+  font-size: 26px;
+}
+/*Special*/
+.imgSpecial {
+  background-image: url("..//img/fruits.jpg");
   background-attachment: fixed;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.imgSpecial {
-  background-image: url("..//img/fruits.jpg");
-}
-.textCenter,
 .textSpecial {
-  display: grid;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-.textSpecial {
-  max-width: 900px;
-  height: 300px;
+  width: 60%;
+  margin: 50px auto;
+  padding: 30px 0;
+  background-color: rgba(0,0,0,0.6);
   border: 1px solid #fff;
-  background-color: rgba(0,0,0,0.4);
-  text-align: center;
-  color: #fff;
-}
-.white {
-  color: #fff;
-}
-/*articles and recetas*/
-.recetaImg img {
-  width: 300px;
-  height: auto;
-}
-.receta {
   text-align: center;
 }
-.receta a {
+/*recetas*/
+.a-receta a {
   text-decoration: none;
   color: #a4c348;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 18px;
 }
+/*imgTestimonials*/
 .imgTestimonials {
   background-image: url("..//img/smile.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-/*form*/
-.contactMe {
-  display: grid;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+/*Form*/
+.titleContact {
+  margin: 30px auto 0;
+}
+.form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
   height: 200px;
 }
 .formName {
-  width: 350px;
-  line-height: 18px;
-  margin: 5px;
   padding: 8px;
-  border: 2px solid #a4c348;
-/*social*/
-}
-.social {
-  display: grid;
-  -ms-flex-pack: center;
-      justify-content: center;
+  margin: 12px;
+  border-radius: 5px;
+  border: 1px solid #a4c348;
+  width: 220px;
 }
 @keyframes slide {
   0% {
