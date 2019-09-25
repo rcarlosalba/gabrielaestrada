@@ -9,7 +9,7 @@
 </head>
 <body>
     <?php include('header.php')?>
-    
+    <h1>hola</h1>
     <?php include('links.php'); ?>
 </body>
 </html>

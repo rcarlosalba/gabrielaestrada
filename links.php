@@ -2,7 +2,7 @@
 <script>
     WebFont.load({
       google: {
-        families: ['Lato:400,700,900']
+        families: ['Montserrat:400,700,900']
       }
     });
 </script>
