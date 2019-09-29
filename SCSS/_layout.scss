@@ -1,0 +1,49 @@
+// main container
+.main-container{
+    width: 100%;
+}
+// layout Central
+.central-container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+// disfribuciones
+.grid{
+    display: grid;
+}
+.one{
+    grid-area: one;
+}
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area: three;
+}
+.four{
+    grid-area: four;
+}
+.four-box{
+    @extend .grid;
+    grid-template-columns: repeat(1fr,4);
+    grid-template-areas: "one" "two" "three" "four";
+}
+.two-box{
+    @extend .grid;
+    grid-template-columns: repeat(1fr,2);
+    grid-template-areas: "one" "two"
+                         "three" "four";
+}
+.one-box{
+    @extend .grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "one" 
+                         "two" 
+                         "three" 
+                         "four";
+}
+// media Queries
+@media screen and(max-width: 222px){
+
+}

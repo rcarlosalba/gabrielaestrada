@@ -1,15 +1,20 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Gabriela Estrada | Nutricionista - Especialista en alergias alimenticias.</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
+<?php include('head.php'); ?>
 <body>
-    <?php include('header.php')?>
-    <h1>hola</h1>
+    <div class="main-container">
+        <header class="central-container flex-between">
+            <figure class="img-space">
+                <img src="./assets/logo-gabrielaestrada.jpg" alt="Gabriela Estrada | Nutricionistra">
+            </figure>
+            <ul class="list-landscape flex">
+                <li><i class="fab fa-youtube"></i></li>
+                <li><i class="fab fa-facebook-square"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-soundcloud"></i></li>
+            </ul>
+        </header>
+    </div>
+    <?php include('menu.php'); ?>
+    <?php include('footer.php');?>
     <?php include('links.php'); ?>
 </body>
 </html>
