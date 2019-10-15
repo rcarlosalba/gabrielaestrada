@@ -1,7 +1,31 @@
+@import '_variables.scss';
+
 .list-landscape{
     list-style: none;
-li{
+    li{
         margin: 4px;
         padding: 4px;
+        a{
+            text-decoration: none;
+        }
     }
+}
+.menu-style{
+    text-align: center;
+}
+.menu-style:hover{
+    border-top: 2px solid $color-verde-base;
+    border-bottom: 2px solid  $color-verde-base;
+    padding: 4px;
+    color: $color-verde-base;
+}
+
+.titleH2{
+    font-size: $size-h2;
+    color: $color-verde-base;
+    padding-bottom: $padding-title-bottom;
+}
+
+.top-padding-title{
+    padding-top: $padding-title-top;
 }

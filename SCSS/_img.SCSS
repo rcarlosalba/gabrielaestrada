@@ -12,3 +12,23 @@
     margin: 4px;
     padding: 4px;
 }
+.slider-size{
+    width: 100%;
+    height: 400px;
+}
+.img-1{
+    @extend .parallax;
+    background-image: url(../assets/hero1.jpg);
+}
+.img-2{
+    @extend .parallax;
+    background-image: url(../assets/hero1.jpg);
+}
+.img-3{
+    @extend .parallax;
+    background-image: url(../assets/hero1.jpg);
+}
+.img-4{
+    @extend .parallax;
+    background-image: url(../assets/hero1.jpg);
+}
