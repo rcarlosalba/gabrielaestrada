@@ -1,4 +1,17 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+<script>
+  const botonmenu = document.querySelector('.burger-icon');
+  const menu = document.querySelector('.burger-menu');
+  botonmenu.addEventListener('click', toogleMenu);
+  function toogleMenu(){
+    if (menu.classList.contains('is-active')) {
+      menu.classList.remove('is-active')      
+    }
+    else{
+      menu.classList.add('is-active')
+    }
+  }
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 <script>
     WebFont.load({

@@ -6,12 +6,65 @@
   font-family: 'Montserrat', sans-serif;
   color: #707070; }
 
+.list-vertical {
+  list-style: none; }
+
+.list-vertical li {
+  margin: 4px;
+  padding: 4px; }
+
+.list-vertical li a {
+  text-decoration: none; }
+
+.text-center {
+  text-align: center; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.menu-style:hover {
+  border-top: 2px solid #a4c348;
+  border-bottom: 2px solid #a4c348;
+  padding: 4px;
+  color: #a4c348; }
+
+.title, .titleH1, .titleH2 {
+  color: #a4c348;
+  font-weight: 700;
+  padding: 12px 0 24px 0; }
+
+.titleH1 {
+  font-size: 24px; }
+
+.titleH2 {
+  font-size: 18px; }
+
+.description-text {
+  font-size: 14px;
+  color: #707070; }
+
+.space-top {
+  margin-top: 125px;
+  position: absolute; }
+
+.burger-icon {
+  display: none; }
+
 .main-container {
   width: 100%; }
 
 .central-container {
   width: 80%;
   margin: 0 auto; }
+
+.position-header {
+  display: block;
+  position: fixed;
+  width: 100%;
+  background-color: #FFF; }
 
 .grid, .four-column, .two-column, .one-column {
   display: grid; }
@@ -40,6 +93,47 @@
   grid-template-columns: 1fr;
   grid-template-areas: "one"  "two"  "three"  "four"; }
 
+@media screen and (max-width: 620px) {
+  .full-menu {
+    display: none; }
+
+  .burger-icon {
+    display: block;
+    position: fixed;
+    top: 64px;
+    right: 11%;
+    background-color: #a4c348;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    line-height: 45px;
+    text-align: center;
+    z-index: 2;
+    cursor: pointer; }
+
+  .burger-icon i {
+    font-size: 24px; }
+
+  .burger-menu {
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 24%;
+    background-color: rgba(164, 195, 72, 0.6);
+    transition: .3s;
+    left: -100%; }
+
+  .burger-menu.is-active {
+    left: 0;
+    display: block; }
+
+  .burger-menu ul {
+    display: block;
+    text-align: center; }
+
+  .burger-menu ul li {
+    margin: 24px auto; } }
 .flex, .flex-center, .flex-between, .flex-around, .flex-evenly {
   display: flex; }
 

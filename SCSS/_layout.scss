@@ -7,6 +7,12 @@
     width: 80%;
     margin: 0 auto;
 }
+.position-header{
+    display: block;
+    position: fixed;
+    width: 100%;
+    background-color: $color-blanco-fondo;
+}
 
 // disfribuciones
 .grid{
@@ -44,6 +50,46 @@
                          "four";
 }
 // media Queries
-@media screen and(max-width: 222px){
-
+@media screen and(max-width: 620px){
+    .full-menu{
+        display: none;
+    }
+    .burger-icon{
+        display: block;
+        position: fixed;
+        top: 64px;
+        right: 11%;
+        background-color: $color-verde-base;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        line-height: 45px;
+        text-align: center;
+        z-index: 2;
+        cursor: pointer;
+    }
+    .burger-icon i{
+        font-size: 24px;
+    }
+    .burger-menu{
+        display: none;
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        padding-top: 24%;
+        background-color: rgba($color: $color-verde-base, $alpha: 0.6);
+        transition: .3s;
+        left: -100%;
+    }
+    .burger-menu.is-active{
+        left: 0;
+        display: block;
+    }
+    .burger-menu ul{
+        display: block;
+        text-align: center;
+    }
+    .burger-menu ul li{
+        margin: 24px auto;
+    }
 }

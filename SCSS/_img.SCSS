@@ -1,3 +1,5 @@
+@import '_variables';
+
 .img-front{
     width: 100%;
     height: 450px;
@@ -9,8 +11,8 @@
     background-size: cover;
 }
 .img-space{
-    margin: 4px;
-    padding: 4px;
+    margin: $margin;
+    padding: $padding;
 }
 .img-1{
     @extend .parallax;
