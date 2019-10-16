@@ -12,6 +12,7 @@
     position: fixed;
     width: 100%;
     background-color: $color-blanco-fondo;
+    top: 0;
 }
 
 // disfribuciones
@@ -30,24 +31,24 @@
 .four{
     grid-area: four;
 }
-.four-column{
-    @extend .grid;
-    grid-template-columns: repeat(1fr,4);
-    grid-template-areas: "one" "two" "three" "four";
-}
-.two-column{
-    @extend .grid;
-    grid-template-columns: repeat(1fr,2);
-    grid-template-areas: "one" "two"
-                         "three" "four";
-}
-.one-column{
+.one--column{
     @extend .grid;
     grid-template-columns: 1fr;
     grid-template-areas: "one" 
                          "two" 
                          "three" 
                          "four";
+}
+.two--column{
+    @extend .grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "one two"
+                         "three four";
+}
+.four--column{
+    @extend .grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "one two three four";
 }
 // media Queries
 @media screen and(max-width: 620px){
