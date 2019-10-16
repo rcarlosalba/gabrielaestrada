@@ -24,18 +24,18 @@
 .four{
     grid-area: four;
 }
-.four-box{
+.four-column{
     @extend .grid;
     grid-template-columns: repeat(1fr,4);
     grid-template-areas: "one" "two" "three" "four";
 }
-.two-box{
+.two-column{
     @extend .grid;
     grid-template-columns: repeat(1fr,2);
     grid-template-areas: "one" "two"
                          "three" "four";
 }
-.one-box{
+.one-column{
     @extend .grid;
     grid-template-columns: 1fr;
     grid-template-areas: "one" 

@@ -1,5 +1,5 @@
 <nav class="central-container">
-    <ul class="list-landscape flex-center">
+    <ul class="list-vertical flex-center">
         <li><a class="menu-style" href="#">Home</a></li>
         <li><a class="menu-style" href="#">Servicios</a></li>
         <li><a class="menu-style" href="#">Recetas y Recursos</a></li>

@@ -1,17 +1,24 @@
 @import '_variables.scss';
 
-.list-landscape{
+.list-vertical{
     list-style: none;
-    li{
-        margin: 4px;
-        padding: 4px;
-        a{
-            text-decoration: none;
-        }
-    }
 }
-.menu-style{
+.list-vertical li {
+    margin: 4px;
+    padding: 4px;
+}
+.list-vertical li a{
+    text-decoration: none;
+}
+// Text align
+.text-center{
     text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
 }
 .menu-style:hover{
     border-top: 2px solid $color-verde-base;
@@ -19,13 +26,20 @@
     padding: 4px;
     color: $color-verde-base;
 }
-
-.titleH2{
-    font-size: $size-h2;
+.title{
     color: $color-verde-base;
-    padding-bottom: $padding-title-bottom;
+    font-weight: 700;
+    padding: $padding-title;
 }
-
-.top-padding-title{
-    padding-top: $padding-title-top;
+.titleH1{
+    @extend .title;
+    font-size: $size-h1;
+}
+.titleH2{
+    @extend .title;
+    font-size: $size-h2;
+}
+.description-text{
+    font-size: $texto-normal;
+    color: $color-fuente;
 }

@@ -3,7 +3,7 @@
         <figure class="img-space">
             <img src="./assets/logo-gabrielaestrada.jpg" alt="Gabriela Estrada | Nutricionistra">
         </figure>
-        <ul class="list-landscape flex">
+        <ul class="list-vertical flex">
             <li><a href="#"><i class="menu-style fab fa-youtube"></i></a></li>
             <li><a href="#"><i class="menu-style fab fa-facebook-square"></i></a></li>
             <li><a href="#"><i class="menu-style fab fa-instagram"></i></a></li>
