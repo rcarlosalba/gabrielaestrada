@@ -31,7 +31,7 @@
   padding: 4px;
   color: #a4c348; }
 
-.title, .titleH1, .titleH2 {
+.title, .titleH1, .titleH2, .titleH3, .titleH3 i {
   color: #a4c348;
   font-weight: 700;
   padding: 12px 0 24px 0; }
@@ -41,6 +41,10 @@
 
 .titleH2 {
   font-size: 18px; }
+
+.titleH3, .titleH3 i {
+  font-size: 16px;
+  padding: 4px; }
 
 .description-text {
   font-size: 14px;
@@ -136,6 +140,17 @@
 
   .burger-menu ul li {
     margin: 24px auto; } }
+@media screen and (max-width: 1060px) {
+  .four--column {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "one two" "three four"; } }
+@media screen and (max-width: 561px) {
+  .four--column {
+    grid-template-columns: 1fr;
+    grid-template-areas: "one"  "two"  "three"  "four"; } }
+.services {
+  padding: 120px 0 40px; }
+
 .flex, .flex-center, .flex-between, .flex-around, .flex-evenly {
   display: flex; }
 
@@ -245,6 +260,17 @@
 
   .burger-menu ul li {
     margin: 24px auto; } }
+@media screen and (max-width: 1060px) {
+  .four--column {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "one two" "three four"; } }
+@media screen and (max-width: 561px) {
+  .four--column {
+    grid-template-columns: 1fr;
+    grid-template-areas: "one"  "two"  "three"  "four"; } }
+.services {
+  padding: 120px 0 40px; }
+
 .list-vertical {
   list-style: none; }
 
@@ -270,7 +296,7 @@
   padding: 4px;
   color: #a4c348; }
 
-.title, .titleH1, .titleH2 {
+.title, .titleH1, .titleH2, .titleH3, .titleH3 i {
   color: #a4c348;
   font-weight: 700;
   padding: 12px 0 24px 0; }
@@ -281,6 +307,10 @@
 .titleH2 {
   font-size: 18px; }
 
+.titleH3, .titleH3 i {
+  font-size: 16px;
+  padding: 4px; }
+
 .description-text {
   font-size: 14px;
   color: #707070; }
@@ -288,6 +318,17 @@
 .img-front {
   width: 100%;
   height: 300px; }
+
+.img-services img {
+  width: 200px;
+  height: auto;
+  padding: 4px;
+  margin: 4px;
+  border: 1px solid #a4c348;
+  transition: 0.5s; }
+
+.img-services img:hover {
+  width: 210px; }
 
 .parallax, .img-1, .img-2, .img-3, .img-4 {
   background-position: center center;

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+    .mySlides {display:none;}
+    .display-container img{
+      height: 350px;
+      width: 100%;
+    }
+    .mySlides{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      object-fit: cover;
+      object-position: center center;
+    }
+    button{
+      z-index: 2;
+      position: relative;
+    }
+</style>
+<body>
+    <div class="display-container">
+        <img class="mySlides" src="hero1.jpg">
+        <img class="mySlides" src="hero2.jpg">
+        <img class="mySlides" src="hero3.jpg">
+        <img class="mySlides" src="hero4.jpg">
+      
+        <button class="buttonS b-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="buttonS b-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+      
+      <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+      }
+      </script>
+</body>
+</html>

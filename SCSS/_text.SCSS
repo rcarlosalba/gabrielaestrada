@@ -39,6 +39,14 @@
     @extend .title;
     font-size: $size-h2;
 }
+.titleH3{
+    @extend .title;
+    font-size: $size-h3;
+    padding: $padding;
+}
+.titleH3 i{
+    @extend .titleH3;
+}
 .description-text{
     font-size: $texto-normal;
     color: $color-fuente;

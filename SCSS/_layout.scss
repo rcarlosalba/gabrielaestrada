@@ -94,3 +94,23 @@
         margin: 24px auto;
     }
 }
+@media screen and (max-width:1060px){
+    .four--column{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "one two"
+                            "three four";
+    }
+}
+@media screen and (max-width:561px){
+    .four--column{
+        grid-template-columns: 1fr;
+        grid-template-areas: "one" 
+                             "two" 
+                             "three" 
+                             "four";
+    }
+}
+// contenido
+.services{
+    padding: 120px 0 40px;
+}

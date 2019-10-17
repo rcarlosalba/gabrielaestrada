@@ -2,7 +2,7 @@
 <nav class="central-container full-menu burger-menu">
     <ul class="list-vertical flex-center">
         <li><a class="menu-style" href="#">Home</a></li>
-        <li><a class="menu-style" href="#">Servicios</a></li>
+        <li><a class="menu-style" href="#services">Servicios</a></li>
         <li><a class="menu-style" href="#">Recetas y recursos</a></li>
         <li><a class="menu-style" href="#">Testimonios</a></li>
         <li><a class="menu-style" href="#">Escribeme</a></li>
