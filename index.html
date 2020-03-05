@@ -1,25 +1,132 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" media="screen,projection">
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <div class="menu-container navbar-fixed">
-      <nav class="light-blue">
-        <div class="container nav-wrapper"><a class="brand-logo right" href=""><img class="logo" src="./assets/logo.png" alt="Nutriendo la vida" srcset=""></a>
-          <ul class="left" id="nav-mobile"> 
-            <li><a href="">Sass</a></li>
-            <li><a href="">Badges</a></li>
-            <li><a href="">JS</a></li>
-          </ul>
-        </div>
-      </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top"><a class="navbar-brand" href="#"><img class="logo d-inline-block align-top" src="./assets/logo.png" alt="Nutriendo la vida" srcset=""></a>
+      <buton class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></buton>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active"><a class="nav-link" href="#home">Home<span class="sr-only"></span></a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#recetas">Recetas</a></li>
+          <li class="nav-item"><a class="nav-link" href="#universidad">Universidad</a></li>
+          <li class="nav-item"><a class="nav-link" href="#acercade">Acerca de</a></li>
+          <li class="nav-item"><a class="nav-link" href="">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#footer">Escribeme</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container-fluid" id="home">
+      <div class="row">
+        <div class="col parallax img-parallax1 d-flex align-items-center justify-content-center"></div>
+      </div>
     </div>
-    <script https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js></script>
-    <footer></footer>
+    <div class="container mt-4" id="servicios">
+      <div class="row">
+        <div class="col-sm-10 col-md-12">
+          <h1 class="text-center">Nutriendo la vida</h1>
+          <p>Vivir es una aventura y brindar a esa aventura los recursos necesarios para disfrutarla al máximo es lo que me despierta cada día. Necesitas ¿Subir peso? ¿tienes intolerancias alimentos? ¿tienes alergias alimentos?¿tienes celiaquía? permiteme acompañarte en este proceso, descubriendo la nueva forma de alimentarte y nutrirte, con los siguientes pasos:</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-4">
+          <div class="container-icon d-flex align-items-center justify-content-center"><img class="icon" src="..//assets/evaluacion.svg" alt="" srcset=""></div>
+          <h2 class="text-center">Evaluación Diagnostica</h2>
+          <p class="text-center">Estado nutricional, elaboración de gráficas de OMS.</p>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <div class="container-icon d-flex align-items-center justify-content-center"><img class="icon" src="..//assets/estado.svg" alt="" srcset=""></div>
+          <h2 class="text-center">Estado Nutrional</h2>
+          <p class="text-center">Necesito la descripción de los/algunos indicadores de estado. </p>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <div class="container-icon d-flex align-items-center justify-content-center"><img class="icon" src="..//assets/plan.svg" alt="" srcset=""></div>
+          <h2 class="text-center">Plan Alimenticio</h2>
+          <p class="text-center">De acuerdo a la edad, los objetivos, las restricciones, los alimentos preferidos. </p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col parallax img-parallax2"></div>
+      </div>
+    </div>
+    <div class="container mt-4 mb-4" id="recetas">
+      <div class="row">
+        <div class="col sm-12 col-md-4">
+          <div class="card mb-2"><img class="card-img-top" src="..//assets/pancakes.jpg" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Panqueques de Avena</h5>
+              <p class="card-text">Nutritivos y sin gluten. </p><a class="btn btn-success text-light">Vamos a la receta</a>
+            </div>
+          </div>
+        </div>
+        <div class="col sm-12 col-md-4">
+          <div class="card mb-2"><img class="card-img-top" src="..//assets/ensalada.jpg" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Ensalada veraniega</h5>
+              <p class="card-text">Fresca, proteinica y veraniega. </p><a class="btn btn-success text-light">Vamos a la receta.</a>
+            </div>
+          </div>
+        </div>
+        <div class="col sm-12 col-md-4">
+          <div class="card mb-2"><img class="card-img-top" src="..//assets/tea.jpg" alt="">
+            <div class="card-body">
+              <h5 class="card-title">Té energetico</h5>
+              <p class="card-text">Llena tus mañanas de sabor y energía.</p><a class="btn btn-success text-light">Vamos a la receta</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col parallax img-parallax3"></div>
+      </div>
+    </div>
+    <div class="container-fluid pt-4" id="universidad">
+      <div class="container mb-2">
+        <div class="row">
+          <div class="col"><img src="..//assets/uspg.png" alt="">
+            <h3>Nombre del Curso </h3>
+            <p>Descripción del curso. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error odit earum, illum doloribus omnis necessitatibus voluptates hic modi unde repudiandae aut laborum, dicta nesciunt, excepturi sequi nemo iste corrupti quia.</p><a class="btn btn-success text-light">Material del Curso</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col parallax img-parallax3"></div>
+      </div>
+    </div>
+    <div class="container mt-2" id="acercade">
+      <div class="row">
+        <div class="col-sm-12 col-md-3"><img class="profile mt-2 rounded border border-success" src="..//assets/gabrielaEstrada.jpg" alt="Gabriela Estrada | Nutricionista - Dietista - Especialista en Alergologia"></div>
+        <div class="col col-md-9">
+          <h3>Acerca de Gabriela Estrada</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit earum officia doloremque, natus vitae vel unde optio culpa nihil nesciunt dicta deleniti, modi eos facilis voluptatibus delectus dignissimos quaerat reprehenderit?</p>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <footer id="footer">
+      <div class="container mt-4 mb-4">
+        <div class="row">
+          <div class="col">
+            <p>Sigueme</p><a href=""><img class="icon mr-1 mb-1" src="..//assets/fb.svg" alt=""></a><a href=""><img class="icon mr-1 mb-1" src="..//assets/ins.svg" alt=""></a>
+          </div>
+          <div class="col">
+            <p>Escribeme</p><a href="mailto:nutricion@gabrielaestrada.com"><img class="icon mr-1 mb-1" src="..//assets/email.svg" alt=""></a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

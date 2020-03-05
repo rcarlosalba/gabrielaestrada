@@ -1,0 +1,39 @@
+.logo{
+  max-height: 60px;
+}
+.parallax{
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  background-attachment: fixed;
+  max-height:350px;
+  height: 350px;
+}
+// imagenes parallax
+.img-parallax1{
+  background-image: url(..//assets/hero.jpg);
+}
+.img-parallax2{
+  background-image: url(..//assets/hero.jpg);
+}
+.img-parallax3{
+  background-image: url(..//assets/hero.jpg);
+}
+.img-parallax4{
+  background-image: url(..//assets/hero.jpg);
+}
+.main-title{
+  background-color: rgba(255, 255, 255, .7);
+  width: 50%;
+  height: 30%;
+}
+.container-icon{
+  max-width: 100%;
+}
+.icon{
+  max-height: 60px;
+}
+.profile{
+  max-width: 100%;
+}

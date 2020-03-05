@@ -1,12 +1,22 @@
-.menu-container.navbar-fixed
-  nav.light-blue
-    .container.nav-wrapper
-      a(href="" class="brand-logo right")
-        img(src="./assets/logo.png", alt="Nutriendo la vida", srcset="", class="logo")
-      ul(id="nav-mobile" class="left") 
-        li
-          a(href="") Sass
-        li
-          a(href="") Badges
-        li
-          a(href="") JS
+nav.navbar.navbar-expand-lg.navbar-light.bg-light.sticky-top
+  a.navbar-brand(href="#")
+    img.logo.d-inline-block.align-top(src="./assets/logo.png", alt="Nutriendo la vida", srcset="")
+  buton.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarNav", aria-controls="navbarNav", aria-expanded="false", aria-label="Toggle navigation")
+    span.navbar-toggler-icon
+  .collapse.navbar-collapse#navbarNav
+    ul.navbar-nav
+      li.nav-item.active
+        a.nav-link(href="#home") Home
+          span.sr-only
+      li.nav-item
+        a.nav-link(href="#servicios") Servicios
+      li.nav-item
+        a.nav-link(href="#recetas") Recetas
+      li.nav-item
+        a.nav-link(href="#universidad") Universidad
+      li.nav-item
+        a.nav-link(href="#acercade") Acerca de
+      li.nav-item
+        a.nav-link(href="") Blog
+      li.nav-item
+        a.nav-link(href="#footer") Escribeme
