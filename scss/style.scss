@@ -3,23 +3,23 @@
 }
 .parallax{
   background-repeat: no-repeat;
-  background-position-x: center;
+  background-position-x: bottom;
   background-size: cover;
   background-attachment: fixed;
-  height: 300px;
+  height: 350px;
 }
 // imagenes parallax
 .img-parallax1{
   background-image: url(..//assets/hero.jpg);
 }
 .img-parallax2{
-  background-image: url(..//assets/hero.jpg);
+  background-image: url(..//assets/hero2.jpg);
 }
 .img-parallax3{
-  background-image: url(..//assets/hero.jpg);
+  background-image: url(..//assets/hero3.jpg);
 }
 .img-parallax4{
-  background-image: url(..//assets/hero.jpg);
+  background-image: url(..//assets/hero4.jpg);
 }
 .main-title{
   background-color: rgba(255, 255, 255, .7);
