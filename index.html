@@ -7,20 +7,19 @@
     <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top"><a class="navbar-brand" href="#"><img class="logo d-inline-block align-top" src="./assets/logo.png" alt="Nutriendo la vida" srcset=""></a>
-      <buton class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></buton>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active"><a class="nav-link" href="#home">Home<span class="sr-only"></span></a></li>
-          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
-          <li class="nav-item"><a class="nav-link" href="#recetas">Recetas</a></li>
-          <li class="nav-item"><a class="nav-link" href="#universidad">Universidad</a></li>
-          <li class="nav-item"><a class="nav-link" href="#acercade">Acerca de</a></li>
-          <li class="nav-item"><a class="nav-link" href="">Blog</a></li>
-          <li class="nav-item"><a class="nav-link" href="#footer">Escribeme</a></li>
+    <header><i class="fas fa-bars responsive-button d-none d-sm-block d-md-none text-success"></i>
+      <nav class="d-flex main-menu justify-content-between align-items-center bg-white"><a class="m-2" href="#"><img class="logo" src="./assets/logo.png" alt="Nutriendo la vida" srcset=""></a>
+        <ul class="list-style-none mb-0 ml-0 mr-2 list-menu text-center">
+          <li class="m-2"><a class="text-decoration-none text-success" href="#home">Home</a></li>
+          <li class="m-2"><a class="text-decoration-none text-success" href="#servicios">Servicios</a></li>
+          <li class="m-2"><a class="text-decoration-none text-success" href="#recetas">Recetas</a></li>
+          <li class="m-2"><a class="text-decoration-none text-success" href="#universidad">Universidad</a></li>
+          <li class="m-2"><a class="text-decoration-none text-success" href="#acercade">Acerca de</a></li>
+          <li class="m-2"><a class="text-decoration-none text-success" href="">Blog</a></li>
+          <li class="m-2"><a class="text-decoration-none text-success" href="#footer">Escribeme</a></li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </header>
     <div class="container-fluid" id="home">
       <div class="row">
         <div class="col parallax img-parallax1 d-flex align-items-center justify-content-center"></div>
@@ -34,21 +33,23 @@
           <p class="text-center">Vivir es una aventura y brindar a esa aventura los recursos necesarios para disfrutarla al máximo es lo que me despierta cada día. Necesitas ¿Subir peso? ¿tienes intolerancias alimentos? ¿tienes alergias alimentos?¿tienes celiaquía? permiteme acompañarte en este proceso, descubriendo la nueva forma de alimentarte y nutrirte, con los siguientes pasos:</p>
         </div>
       </div>
-      <div class="row">
-        <div class="col-sm-12 col-md-4">
-          <div class="container-icon d-flex align-items-center justify-content-center"><i class="fas fa-weight icon mb-1 text-success"></i></div>
-          <h2 class="text-center mt-2">Evaluación Diagnostica</h2>
-          <p class="text-center">Estado nutricional, elaboración de gráficas de OMS.</p>
+      <div class="row text-center">
+        <div class="col-sm-12 col-md-4"><i class="fab fa-nutritionix icon text-success"></i>
+          <h3>Jornadas nutricionales</h3>
         </div>
-        <div class="col-sm-12 col-md-4">
-          <div class="container-icon d-flex align-items-center justify-content-center"><i class="far fa-chart-bar icon mb-1 text-success"></i></div>
-          <h2 class="text-center mt-2">Estado Nutrional</h2>
-          <p class="text-center">Necesito la descripción de los/algunos indicadores de estado. </p>
+        <div class="col-sm-12 col-md-4"><i class="fas fa-id-card icon text-success"></i>
+          <h3>Asesorías personalizadas</h3>
         </div>
-        <div class="col-sm-12 col-md-4">
-          <div class="container-icon d-flex align-items-center justify-content-center"><i class="far fa-check-square icon mb-1 text-success"></i></div>
-          <h2 class="text-center mt-2">Plan Alimenticio</h2>
-          <p class="text-center">De acuerdo a la edad, los objetivos, las restricciones, los alimentos preferidos. </p>
+        <div class="col-sm-12 col-md-4"><i class="fas fa-comment-medical icon text-success"></i>
+          <h3>Conferencias y talleres</h3>
+        </div>
+      </div>
+      <div class="row text-center mt-4">
+        <div class="col-sm-12 col-md-6"><i class="fas fa-vial icon text-success"></i>
+          <h3>Servicio de laboratorio</h3>
+        </div>
+        <div class="col-sm-12 col-md-6"><i class="fas fa-clipboard-list icon text-success"></i>
+          <h3>Seguimiento intermitente</h3>
         </div>
       </div>
     </div>
@@ -65,7 +66,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col sm-12 col-md-4">
+        <div class="col-sm-12 col-md-4">
           <div class="card mb-2"><img class="card-img-top" src="./assets/pancakes.jpg" alt="Panqueques de Avena">
             <div class="card-body">
               <h5 class="card-title">Panqueques de Avena</h5>
@@ -73,7 +74,7 @@
             </div>
           </div>
         </div>
-        <div class="col sm-12 col-md-4">
+        <div class="col-sm-12 col-md-4">
           <div class="card mb-2"><img class="card-img-top" src="./assets/ensalada.jpg" alt="Ensalada veraniega">
             <div class="card-body">
               <h5 class="card-title">Ensalada veraniega</h5>
@@ -81,7 +82,7 @@
             </div>
           </div>
         </div>
-        <div class="col sm-12 col-md-4">
+        <div class="col-sm-12 col-md-4">
           <div class="card mb-2"><img class="card-img-top" src="./assets/tea.jpg" alt="Té energetico">
             <div class="card-body">
               <h5 class="card-title">Té energetico</h5>
@@ -100,10 +101,10 @@
     <div class="container-fluid pt-4">
       <div class="container mb-2">
         <div class="row">
-          <div class="col-sm-3"><img src="./assets/uspg.png" alt="Cursos en Universidad San Pablo de Guatemala"></div>
-          <div class="col-sm-9">
-            <h3>Nombre del Curso </h3>
-            <p>Descripción del curso. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error odit earum, illum doloribus omnis necessitatibus voluptates hic modi unde repudiandae aut laborum, dicta nesciunt, excepturi sequi nemo iste corrupti quia.</p><a class="btn btn-success text-light">Material del Curso</a>
+          <div class="col-sm-2 col-md-3"><img src="./assets/uspg.png" alt="Cursos en Universidad San Pablo de Guatemala"></div>
+          <div class="col-sm-12 offset-md-1 col-md-8">
+            <h3>Especialización de transformación de alimentos</h3>
+            <p>Escuela de Ganadería. Catedrática y coordinadora universitaria.</p><a class="btn btn-success text-light">Material del Curso</a>
           </div>
         </div>
       </div>
@@ -119,7 +120,13 @@
         <div class="col-sm-12 col-md-3"><img class="profile mt-2 rounded border border-success" src="./assets/gabrielaEstrada.jpg" alt="Gabriela Estrada | Nutricionista - Dietista - Especialista en Alergologia"></div>
         <div class="col col-md-9">
           <h3>Acerca de Gabriela Estrada</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit earum officia doloremque, natus vitae vel unde optio culpa nihil nesciunt dicta deleniti, modi eos facilis voluptatibus delectus dignissimos quaerat reprehenderit?</p>
+          <ul>
+            <li>Licenciada en Nutrición por Universidad Rafael Landivar de Guatemala</li>
+            <li>Especialista en alergias alimentarias, dietas de eliminación y celiaquía.</li>
+            <li>Certificada por el BID / UNICEF para salud pública en primera infancia.</li>
+            <li>Más de 10 años de experiencia como consultora y coach en industria alimentaria.</li>
+            <li>Fundadora de Nutriendo la Vida, así como sus proyectos de laboratorio, jornadas nutricionales, talleres, charlas y asesorías personalizadas.</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -133,6 +140,7 @@
       </div>
     </footer>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <script src="../js/code.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
