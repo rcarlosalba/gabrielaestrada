@@ -55,6 +55,9 @@ header{
   z-index: 3;
   width: 100%;
 }
+.responsive-button{
+  display: none !important;
+}
 @media  screen and(max-width: 768px){
   .responsive-button{
     position: absolute;
@@ -63,6 +66,7 @@ header{
     z-index: 12;
     font-size: 24px;
     cursor: pointer;
+    display: block!important;
   }
   .list-menu{
     background-color: rgba(255, 2550, 255, .8);
