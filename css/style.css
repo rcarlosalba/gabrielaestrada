@@ -8444,6 +8444,16 @@ video {
   transition-delay: 1000ms;
 }
 
+.parallax1{
+  background-image: url(../assets/hero.jpg);
+  height: 350px;
+}
+
+.parallax2{
+  background-image: url(../assets/hero2.jpg);
+  height: 350px;
+}
+
 @media (min-width: 640px) {
   .sm\:space-y-0 > :not(template) ~ :not(template) {
     --space-y-reverse: 0;
@@ -39750,4 +39760,4 @@ video {
   .xl\:delay-1000 {
     transition-delay: 1000ms;
   }
-} 
+}

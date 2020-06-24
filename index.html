@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gabriela Estrada | Nutricionista, Dietista, Especialista en alergias alimentarias</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <!-- header -->
+  <header class="p-2 flex justify-between items-center fixed bg-verdeFondos left-0 right-0 top-0">
+    <a href="index.html"><img class="h-20 lg:h-20 w-auto" src="./assets/logo.png" alt="Gabriela Estrada | Nutricionista, Dietista, Especialista en alergias alimentarias"></a>
+    <div class="menu-container">
+      <img src="./assets/menu.svg" class="h-8 w-auto mr-2 text-verdeBoton cursor-pointer text-5xl lg:hidden" id="boton-responsive" alt="Menu Responsive">
+      <nav class="lg:block lg:w-auto lg:h-auto" id="menu-nav">
+        <ul class="text-center absolute inset-0 mt-24 transition duration-75 ease-in-out invisible h-screen bg-transparentFondo lg:h-auto lg:bg-verdeFondos lg:static lg:mt-0 lg:visible lg:inline-flex" id="menu-list">
+          <li class="text-xl py-4 lg:mx-2 xl:p-2 text-verdeBoton hover:underline"><a href="#presencial">Servicios</a></li>
+          <li class="text-xl py-4 lg:mx-2 xl:p-2 text-verdeBoton hover:underline"><a href="./alergias.html">¿Alergias?</a></li>
+          <li class="text-xl py-4 lg:mx-2 xl:p-2 text-rojoEstados hover:underline"><a href="#online">Consulta Online</a></li>
+          <li class="text-xl py-4 lg:mx-2 xl:p-2 text-verdeBoton hover:underline"><a href="./dietas.html">Dietas</a></li>
+          <li class="text-xl py-4 lg:mx-2 xl:p-2 text-verdeBoton hover:underline"><a href="#about">Sobre mi</a></li>
+          <li class="text-xl py-4 lg:mx-2 xl:p-2 text-verdeBoton hover:underline"><a href="mailto:info@gabrielaestrada.com">Escribeme</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="social-bar hidden lg:block">
+      <ul class="inline-flex">
+        <li class="p-2 text-lg text-verdeBoton"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+        <li class="p-2 text-lg text-verdeBoton"><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li class="p-2 text-lg text-verdeBoton"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+        <li class="p-2 text-lg text-verdeBoton"><a href="#"><i class="fab fa-youtube"></i></a></li>
+        <li class="p-2 text-lg text-rojoEstados"><a href="mailto:info@gabrielaestrada.com"><i class="far fa-envelope-open"></i></a></li>
+      </ul>
+    </div>
+  </header>
+<!-- header -->
+  <div class="spacer h-24"></div>
+  <!-- CTA -->
+  <div class="cta" id="cta">
+    <div class="container-cta bg-verdeFondos flex justify-center py-4">
+      <figure>
+        <img class=" hidden lg:block h-20 lg:h-20 w-auto" src="./assets/logo.png" alt="Gabriela Estrada | Nutricionista, Dietista, Especialista en alergias alimentarias">
+      </figure>
+      <div class="main-box text-verdeBoton text-center">
+        <h2 class="text-2xl font-bold">Gabriela Estrada <br> <span>Nutricionista, Dietista.</span></h2>
+        <p>Alimentación adecuada a cada necesidad.</p>
+        <div class="buttons pt-4" id="buttons">
+          <button class="bg-transparent font-semibold py-2 px-4 border rounded hover:bg-verdeBoton hover:text-verdeCardCestacada mr-4" href="#">Consulta Online</button>
+          <button class="bg-transparent font-semibold py-2 px-4 border rounded hover:bg-verdeBoton hover:text-verdeCardCestacada" href="">Escribeme</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- CTA -->
+  <div class="spacer h-8"></div>
+  <!-- Cita -->
+  <div class="haz-cita pt-8" id="haz-cita">
+    <div class="container-cita flex justify-center items-center">
+      <form class="w-full max-w-sm w-5/12 text-verdeBoton">
+        <div class="md:flex md:items-center mb-6">
+          <div class="md:w-1/3">
+            <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name">
+              Nombre
+            </label>
+          </div>
+          <div class="md:w-2/3">
+            <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" value="Nombre y apellido">
+          </div>
+        </div>
+        <div class="md:flex md:items-center mb-6">
+          <div class="md:w-1/3">
+            <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name">
+              Teléfono
+            </label>
+          </div>
+          <div class="md:w-2/3">
+            <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" value="+(502) 55-55-55-55">
+          </div>
+        </div>
+        <div class="md:flex md:items-center mb-6">
+          <div class="md:w-1/3">
+            <label class="block text-gray-500 font-bold md:text-right mb-1 md:mb-0 pr-4" for="inline-full-name">
+              E-mail
+            </label>
+          </div>
+          <div class="md:w-2/3">
+            <input class="bg-gray-200 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:bg-white focus:border-purple-500" id="inline-full-name" type="text" value="ejemplo@correo.com">
+          </div>
+        </div>
+
+        <div class="md:flex md:items-center">
+          <div class="md:w-1/3"></div>
+          <div class="md:w-2/3">
+            <button class="bg-transparent font-semibold py-2 px-4 border rounded hover:bg-verdeBoton hover:text-verdeCardCestacada mr-4" type="button">
+              Enviar
+            </button>
+          </div>
+        </div>
+      </form>
+      <div class="services hidden lg:block ml-2 text-center w-5/12">
+        <div class="icon inline-block w-5/12 text-verdeBoton">
+          <i class="text-verdeBoton text-4xl fas fa-home"></i>
+          <p>En la comodidad y seguridad de tu casa.</p>
+        </div>
+        <div class="icon inline-block w-5/12 text-verdeBoton">
+          <i class="text-verdeBoton text-4xl fas fa-chart-line"></i>
+          <p>Seguimiento de objetivos y evaluación.</p>
+        </div>
+        <div class="icon inline-block w-5/12 text-verdeBoton mt-4">
+          <i class="text-verdeBoton text-4xl fas fa-user-clock"></i>
+          <p>Flexibilidad de horario.</p>
+        </div>
+        <div class="icon inline-block w-5/12 text-verdeBoton mt-4">
+          <i class="text-verdeBoton text-4xl fas fa-clipboard-list"></i>
+          <p>Consultas profesionales.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Cita -->
+  <!-- parallax -->
+  <div class="spacer h-8"></div>
+  <div class="bg-fixed bg-center bg-no-repeat bg-cover parallax1"></div>
+  <!-- parallax -->
+  <!-- services online -->
+  <div class="spacer h-24" id="online"></div>
+  <div class="online">
+    <h2 class="text-center text-4xl text-verdeBoton">Servicios Online</h2>
+    <div class="card-container m-4 sm:flex sm:justify-center" id="card-container">
+
+        <div class="rounded overflow-hidden shadow-lg max-w-sm  mb-4 sm:mb-0 sm:w-4/12 sm:mx-1 md:mx-2">
+          <img class="w-full" src="./assets/basic.jpg" alt="Plan Básico | Servicios online">
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2 text-verdeBoton">Básico</div>
+            <div class="font-bold text-lg mb-2 text-grisTextos">Ideal para bajar de peso.</div>
+            <p class="text-base">
+              <ul class="text-grisTextos">
+                <li>1. Consulta de 15 minutos.</li>
+                <li>2. Menú personalizado.</li>
+                <li>3. Educación alimentario nutricional</li>
+                <li>4. Diagnóstico nutricional conforme a peso y talla IMC</li>
+              </ul>
+            </p>
+          </div>
+          <button class="bg-transparent font-semibold py-2 px-4 rounded border-verdeBoton border text-verdeBoton hover:bg-verdeBoton hover:text-verdeCardCestacada mb-4 mx-auto flex" href="#">Consulta Online</button>
+        </div>
+
+        <div class="rounded overflow-hidden shadow-lg max-w-sm bg-verdeCardCestacada  mb-4 sm:mb-0 sm:w-4/12 sm:mx-1 md:mx-2">
+          <img class="w-full" src="./assets/plus.jpg" alt="Plan Plus | Servicios online">
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2 text-verdeBoton">Plus</div>
+            <div class="font-bold text-lg mb-2 text-grisTextos">Ideal optimizar resultados.</div>
+            <p class="text-base">
+              <ul class="text-grisTextos">
+                <li>1. Consulta de 30 minutos.</li>
+                <li>2. Menú personalizado.</li>
+                <li>3. Educación alimentario nutricional</li>
+                <li>4. Diagnóstico nutricional conforme a peso y talla IMC</li>
+                <li>5. Sugerencias de productos ó marcas saludables para consumo</li>
+                <li>6. Recetario</li>
+              </ul>
+            </p>
+          </div>
+          <button class="bg-transparent font-semibold py-2 px-4 rounded border-verdeBoton border text-verdeBoton hover:bg-verdeBoton hover:text-verdeCardCestacada mb-4 mx-auto flex" href="#">Consulta Online</button>
+        </div>
+
+        <div class="rounded overflow-hidden shadow-lg max-w-sm  mb-4 sm:mb-0 sm:w-4/12 sm:mx-1 md:mx-2">
+          <img class="w-full" src="./assets/premium.jpg" alt="Plan Premium | Servicios online">
+          <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2 text-verdeBoton">Premium</div>
+            <div class="font-bold text-lg mb-2 text-grisTextos">Ideal resultados a largo plazo.</div>
+            <p class="text-base">
+              <ul class="text-grisTextos">
+                <li>1. Consulta de 60 minutos.</li>
+                <li>2. Menús personalizados.</li>
+                <li>3. Educación alimentario nutricional</li>
+                <li>4. Diagnóstico nutricional conforme a peso y talla IMC,(para adultos) niños gráficas según indicadores de OMS en WhoAntro</li>
+                <li>5. Sugerencias de productos ó marcas saludables para consumo</li>
+                <li>6. Recetario</li>
+              </ul>
+            </p>
+          </div>
+          <button class="bg-transparent font-semibold py-2 px-4 rounded border-verdeBoton border text-verdeBoton hover:bg-verdeBoton hover:text-verdeCardCestacada mb-4 mx-auto flex" href="#">Consulta Online</button>
+        </div>
+    </div>
+  </div>
+  <!-- servicios online -->
+  <!-- servicios presenciales -->
+  <div class="spacer h-24" id="presencial"></div>
+  <div class="presencial">
+    <h2 class="text-center text-4xl text-verdeBoton">Servicios presenciales</h2>
+    <div class="card-container m-4 sm:flex sm:justify-center" id="card-container">
+      <div class="rounded overflow-hidden shadow-lg max-w-sm mb-4 sm:mb-0 sm:w-4/12 sm:mx-1 md:mx-2">
+        <img class="w-full" src="./assets/pluspre.jpg" alt="Plan Plus | Servicios presenciales">
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2 text-verdeBoton">Plus</div>
+          <div class="font-bold text-lg mb-2 text-grisTextos">Ideal optimizar resultados.</div>
+          <p class="text-base">
+            <ul class="text-grisTextos">
+              <li>1. Consulta de 60 minutos.</li>
+              <li>2. Menús personalizados.</li>
+              <li>3. Educación alimentario nutricional</li>
+              <li>4. Diagnóstico nutricional conforme a peso y talla IMC, % de agua, % de masa muscular, % de grasa, peso óseo.</li>
+              <li>5. Sugerencias de productos ó marcas saludables para consumo</li>
+              <li>6. Recetario</li>
+            </ul>
+          </p>
+        </div>
+        <button class="bg-transparent font-semibold py-2 px-4 rounded border-verdeBoton border text-verdeBoton hover:bg-verdeBoton hover:text-verdeCardCestacada mb-4 mx-auto flex" href="#">Consulta Online</button>
+      </div>
+
+      <div class="rounded overflow-hidden shadow-lg max-w-sm sm:w-4/12 sm:mx-1 md:mx-2">
+        <img class="w-full" src="./assets/prepre.jpg" alt="Plan Premium | Servicios presenciales">
+        <div class="px-6 py-4">
+          <div class="font-bold text-xl mb-2 text-verdeBoton">Premium</div>
+          <div class="font-bold text-lg mb-2 text-grisTextos">Ideal resultados a largo plazo.</div>
+          <p class="text-base">
+            <ul class="text-grisTextos">
+              <li>1. Consulta de 60 minutos.</li>
+              <li>2. Menús personalizados.</li>
+              <li>3. Educación alimentario nutricional</li>
+              <li>4. Diagnóstico nutricional conforme a peso y talla IMC, % de agua, % de masa muscular, % de grasa, peso óseo.</li>
+              <li>5. Sugerencias de productos ó marcas saludables para consumo</li>
+              <li>6. Recetario</li>
+            </ul>
+          </p>
+        </div>
+        <button class="bg-transparent font-semibold py-2 px-4 rounded border-verdeBoton border text-verdeBoton hover:bg-verdeBoton hover:text-verdeCardCestacada mb-4 mx-auto flex" href="#">Consulta Online</button>
+      </div>
+    </div>
+  </div>
+  <!-- servicios presenciales -->
+  <div class="bg-fixed bg-center bg-no-repeat bg-cover parallax2"></div>
+  <div class="spacer h-8"></div>
+<!-- about -->
+  <div class="about mx-auto w-4/5" id="about">
+    <h2 class="text-center text-4xl text-verdeBoton">Gabriela Estrada</h2>
+    <div class="about-container sm:flex sm:justify-around sm:items-center">
+      <img class="pic-profile mx-auto w-3/6 my-4 sm:w-3/6 md:w-2/6 lg:w-1/4" src="./assets/gabrielaEstrada.jpg" alt="Gabriela Estrada | Nutricionista, Dietista, Especialista en alergias alimentarias">
+      <div class="text-container sm:w-3/6 sm:ml-8 md:w-3/6 lg:w-3/4">
+        <ul class="text-grisTextos">
+          <li class="my-2 md:leading-loose">Maestra de educación preprimaria, Normal de párvulos "Dr. Alfredo Carrillo Ramírez".</li>
+          <li class="my-2 md:leading-loose">Licenciada en Nutrición por Universidad Rafael Landivar de Guatemala.</li>
+          <li class="my-2 md:leading-loose">Especialista en alergias alimentarias, dietas de eliminación y celiaquía.</li>
+          <li class="my-2 md:leading-loose">Certificada por el BID en: Políticas Efectivas del Desarrollo de la primera infancia.</li>
+          <li class="my-2 md:leading-loose">Más de  10 años de experiencia en EAN (educación alimentario nutricional), a padres, niñas y niños, como en industria alimentaria.</li>
+          <li class="my-2 md:leading-loose">Fundadora de Nutriendo la Vida, así como sus proyectos de laboratorio, jornadas nutricionales, talleres, charlas y asesorías personalizadas.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<!-- about -->
+  <footer>
+    <div class="social-bar flex justify-center">
+      <ul class="inline-flex">
+        <li class="p-2 text-lg text-verdeBoton"><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+        <li class="p-2 text-lg text-verdeBoton"><a href="#"><i class="fab fa-instagram"></i></a></li>
+        <li class="p-2 text-lg text-verdeBoton"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+        <li class="p-2 text-lg text-verdeBoton"><a href="#"><i class="fab fa-youtube"></i></a></li>
+        <li class="p-2 text-lg text-rojoEstados"><a href="mailto:info@gabrielaestrada.com"><i class="far fa-envelope-open"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+  <!-- scripts -->
+  <script>
+    const botonResponsive = document.getElementById('boton-responsive')
+    const menuList = document.getElementById('menu-list')
+    function showHide(){
+      if (menuList.classList.contains('invisible')) {
+        menuList.classList.remove('invisible')
+      }else{
+        menuList.classList.add('invisible')
+      }
+    }
+    botonResponsive.addEventListener('click', showHide)
+    menuList.addEventListener('click', showHide)
+
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+  <!-- scripts -->
+</body>
+</html>
